@@ -26,3 +26,17 @@ papers:
     unofficial_code: null
     status: notebook
     smoke_test: "CPU, Qwen3.5-0.8B"
+  - id: "looped-wsp"
+    arxiv: false
+    venue: "blog post"
+    url: "https://mbzuai-oryx.github.io/LoopedWSP/"
+    title: "Looped Weight-Space Programming: LLM-Written Transformers for Long Algorithmic Reasoning"
+    authors: "Elsayed, Heakl et al. (MBZUAI)"
+    date: "2026-11"
+    category: weight-compiled-circuits
+    folder: papers/weight-compiled-circuits/blog-2026-11-looped-wsp
+    model: "no LLM needed (numpy looped transformers; weights written by Claude Opus 5.5)"
+    official_code: "https://github.com/mbzuai-oryx/LoopedWSP"
+    unofficial_code: null
+    status: official-code
+    smoke_test: "CPU, numpy"

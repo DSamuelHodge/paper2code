@@ -3,7 +3,7 @@
 ```
 papers/
   <category>/                     # kebab-case topic, created only when needed
-    <arxiv-id>-<short-slug>/      # e.g. 2611.26450-cpu-inside-an-llm
+    <arxiv-id>-<short-slug>/      # e.g. 2611.26450-cpu-inside-an-llm (no arXiv id: <venue>-<yyyy-mm>-<slug>)
       README.md                   # badge, paper links, code status, contents   (templates/paper_README.md)
       notebook.ipynb              # the Colab notebook (generated)
       build_notebook.py           # regenerates notebook.ipynb                  (templates/build_notebook_template.py)
@@ -16,7 +16,7 @@ templates/                        # templates for a new entry and for this READM
 
 ## Contributing a paper
 
-1. Check for official code (see the rule above). If it exists, add a `papers.yaml` entry with `official_code: <url>` and `status: official-code`, and stop.
+1. Check for official code (see the rule above). If it exists, add a `papers.yaml` entry with `official_code: <url>` and `status: official-code`. Either stop there, or add a guided-tour notebook that runs the official code. For a work without an arXiv entry, set `arxiv: false` and give `url` and `venue`.
 2. Otherwise, pick or create a category, then copy `templates/paper_README.md` and `templates/build_notebook_template.py` into `papers/<category>/<arxiv-id>-<slug>/`.
 3. Write the notebook in the template's order:
    - a plain-English overview
