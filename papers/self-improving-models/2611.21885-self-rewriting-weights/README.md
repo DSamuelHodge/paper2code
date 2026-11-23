@@ -1,6 +1,6 @@
 # Language Models Can Rewrite Their Own Weights: Paper2Code
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/2611.21885-self-rewriting-weights/notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/self-improving-models/2611.21885-self-rewriting-weights/notebook.ipynb)
 
 **Paper:** Fan et al., *Language Models Can Rewrite Their Own Weights*, arXiv:2611.21885 (Nov 2026). [arXiv abs](https://arxiv.org/abs/2611.21885) · [PDF](https://arxiv.org/pdf/2611.21885) · [project page](https://www.jiajunfan.com/projects/self-rewriting/)
 

@@ -4,7 +4,7 @@ def md(s): cells.append(nbf.v4.new_markdown_cell(s.strip("\n")))
 def code(s): cells.append(nbf.v4.new_code_cell(s.strip("\n")))
 
 md(r"""
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/2611.21885-self-rewriting-weights/notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/self-improving-models/2611.21885-self-rewriting-weights/notebook.ipynb)
 
 # Paper2Code: *Language Models Can Rewrite Their Own Weights*
 

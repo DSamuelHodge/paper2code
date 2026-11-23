@@ -1,0 +1,28 @@
+# Paper2Code index. Edit this file, then run: python scripts/build_readme.py
+# status: notebook = our from-scratch teaching notebook; official-code = the entry only links the authors' code
+categories:
+  self-improving-models: "Self-improving models & model editing"
+  weight-compiled-circuits: "Weight-compiled circuits & weight programming"
+papers:
+  - id: "2611.21885"
+    title: "Language Models Can Rewrite Their Own Weights"
+    authors: "Fan et al."
+    date: "2026-11"
+    category: self-improving-models
+    folder: papers/self-improving-models/2611.21885-self-rewriting-weights
+    model: "Qwen3.5-9B (4-bit); small: Qwen3.5-0.8B"
+    official_code: null
+    unofficial_code: "https://github.com/DukeCaesar/models-rewrite-own-weights"
+    status: notebook
+    smoke_test: "CPU, Qwen3.5-0.8B"
+  - id: "2611.26450"
+    title: "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights"
+    authors: "Sah"
+    date: "2026-11"
+    category: weight-compiled-circuits
+    folder: papers/weight-compiled-circuits/2611.26450-cpu-inside-an-llm
+    model: "Qwen3.5-9B (4-bit); paper's model: Qwen3.5-4B; small: Qwen3.5-0.8B"
+    official_code: null
+    unofficial_code: null
+    status: notebook
+    smoke_test: "CPU, Qwen3.5-0.8B"
