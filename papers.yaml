@@ -4,6 +4,7 @@ categories:
   self-improving-models: "Self-improving models & model editing"
   weight-compiled-circuits: "Weight-compiled circuits & weight programming"
   physiological-sensing: "Physiological sensing & metabolic measurement"
+  numerical-robustness: "Numerical robustness & floating-point correctness"
 papers:
   - id: "2611.21885"
     title: "Language Models Can Rewrite Their Own Weights"
@@ -56,3 +57,14 @@ papers:
     unofficial_code: null
     status: notebook
     smoke_test: "CPU, numpy, ~6 s"
+  - id: "2611.30835"
+    title: "The KL Divergence Is Never Negative, Except in PyTorch"
+    authors: "Yang, Tang, Chen, Qian, Chen, Yang, Cui"
+    date: "2026-11"
+    category: numerical-robustness
+    folder: papers/numerical-robustness/2611.30835-stable-kl
+    model: "paper's model: Qwen2.5-1.5B-Instruct (FP16); small: Qwen2.5-0.5B-Instruct"
+    official_code: "https://github.com/xi-xiaoran/stablekl"
+    unofficial_code: null
+    status: official-code
+    smoke_test: "CPU, Qwen2.5-1.5B-Instruct FP16, ~5.5 min"

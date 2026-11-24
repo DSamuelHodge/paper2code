@@ -34,6 +34,13 @@ Runnable, teaching-first notebooks for machine-learning papers, sorted by topic.
 |---|---|---|---|---|---|
 | [Breath Analysis Device (sidestream breath-by-breath O2/CO2 indirect calorimeter)](papers/physiological-sensing/patent-US20190120821A1-sidestream-vo2/) (Atsalakis; Endo Medical Inc., now PNOE Inc.) | [US patent application (granted as US 12,736,522 B2)](https://patents.google.com/patent/US20190120821A1/en) | 2019-04 | no LLM (numpy/scipy simulation) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/physiological-sensing/patent-US20190120821A1-sidestream-vo2/notebook.ipynb) | 📜 patent · 📓 notebook · smoke-tested (CPU, numpy, ~6 s) |
 
+### Numerical robustness & floating-point correctness
+`papers/numerical-robustness/`
+
+| Paper | arXiv / source | Date | Model | Colab / code | Status |
+|---|---|---|---|---|---|
+| [The KL Divergence Is Never Negative, Except in PyTorch](papers/numerical-robustness/2611.30835-stable-kl/) (Yang, Tang, Chen, Qian, Chen, Yang, Cui) | [2611.30835](https://arxiv.org/abs/2611.30835) | 2026-11 | paper's model: Qwen2.5-1.5B-Instruct (FP16); small: Qwen2.5-0.5B-Instruct | [official code](https://github.com/xi-xiaoran/stablekl)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/numerical-robustness/2611.30835-stable-kl/notebook.ipynb) | 🔗 official code + 🧭 guided tour · smoke-tested (CPU, Qwen2.5-1.5B-Instruct FP16, ~5.5 min) |
+
 ## Layout
 
 ```
