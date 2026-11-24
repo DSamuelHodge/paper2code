@@ -3,7 +3,7 @@
 ```
 papers/
   <category>/                     # kebab-case topic, created only when needed
-    <arxiv-id>-<short-slug>/      # e.g. 2611.26450-cpu-inside-an-llm (no arXiv id: <venue>-<yyyy-mm>-<slug>)
+    <arxiv-id>-<short-slug>/      # e.g. 2611.26450-cpu-inside-an-llm (no arXiv id: <venue>-<yyyy-mm>-<slug>; patents: patent-<number>-<slug>)
       README.md                   # badge, paper links, code status, contents   (templates/paper_README.md)
       notebook.ipynb              # the Colab notebook (generated)
       build_notebook.py           # regenerates notebook.ipynb                  (templates/build_notebook_template.py)

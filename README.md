@@ -8,6 +8,7 @@ Runnable, teaching-first notebooks for machine-learning papers, sorted by topic.
 2. **Official code exists:** the entry links it (status 🔗), and nothing is reimplemented. Optionally it adds a **guided tour** notebook (🧭) that clones the official repo, runs it, and explains the key equations next to the source that implements them.
 3. **No official code:** build a from-scratch teaching notebook (status 📓). If an LLM is needed, it uses a real Qwen ~9B model in 4-bit, or the paper's own model when that is a Qwen of similar size. It always has a small-model switch and falls back to the small model when no GPU is present. It is smoke-tested on CPU before it is pushed. Unofficial reimplementations are linked but not relied on.
 4. **No PDFs in the repo.** Link the arXiv page instead, or the project page for works without an arXiv entry.
+5. **Patents** (`type: patent`, status 📜) are treated as works without official code. The notebook teaches the technique by simulation, labels patent statements 📜 and textbook facts 📚, and carries a freedom-to-operate caution (not legal advice).
 
 ## Index
 
@@ -26,12 +27,19 @@ Runnable, teaching-first notebooks for machine-learning papers, sorted by topic.
 | [A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights](papers/weight-compiled-circuits/2611.26450-cpu-inside-an-llm/) (Sah) | [2611.26450](https://arxiv.org/abs/2611.26450) | 2026-11 | Qwen3.5-9B (4-bit); paper's model: Qwen3.5-4B; small: Qwen3.5-0.8B | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/weight-compiled-circuits/2611.26450-cpu-inside-an-llm/notebook.ipynb) | 📓 notebook · smoke-tested (CPU, Qwen3.5-0.8B) |
 | [Looped Weight-Space Programming: LLM-Written Transformers for Long Algorithmic Reasoning](papers/weight-compiled-circuits/blog-2026-11-looped-wsp/) (Elsayed, Heakl et al. (MBZUAI)) | [blog post](https://mbzuai-oryx.github.io/LoopedWSP/) | 2026-11 | no LLM needed (numpy looped transformers; weights written by Claude Opus 5.5) | [official code](https://github.com/mbzuai-oryx/LoopedWSP)<br>[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/weight-compiled-circuits/blog-2026-11-looped-wsp/notebook.ipynb) | 🔗 official code + 🧭 guided tour · smoke-tested (CPU, numpy) |
 
+### Physiological sensing & metabolic measurement
+`papers/physiological-sensing/`
+
+| Paper | arXiv / source | Date | Model | Colab / code | Status |
+|---|---|---|---|---|---|
+| [Breath Analysis Device (sidestream breath-by-breath O2/CO2 indirect calorimeter)](papers/physiological-sensing/patent-US20190120821A1-sidestream-vo2/) (Atsalakis; Endo Medical Inc., now PNOE Inc.) | [US patent application (granted as US 12,736,522 B2)](https://patents.google.com/patent/US20190120821A1/en) | 2019-04 | no LLM (numpy/scipy simulation) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DSamuelHodge/paper2code/blob/main/papers/physiological-sensing/patent-US20190120821A1-sidestream-vo2/notebook.ipynb) | 📜 patent · 📓 notebook · smoke-tested (CPU, numpy, ~6 s) |
+
 ## Layout
 
 ```
 papers/
   <category>/                     # kebab-case topic, created only when needed
-    <arxiv-id>-<short-slug>/      # e.g. 2611.26450-cpu-inside-an-llm (no arXiv id: <venue>-<yyyy-mm>-<slug>)
+    <arxiv-id>-<short-slug>/      # e.g. 2611.26450-cpu-inside-an-llm (no arXiv id: <venue>-<yyyy-mm>-<slug>; patents: patent-<number>-<slug>)
       README.md                   # badge, paper links, code status, contents   (templates/paper_README.md)
       notebook.ipynb              # the Colab notebook (generated)
       build_notebook.py           # regenerates notebook.ipynb                  (templates/build_notebook_template.py)

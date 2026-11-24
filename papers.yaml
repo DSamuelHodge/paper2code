@@ -3,6 +3,7 @@
 categories:
   self-improving-models: "Self-improving models & model editing"
   weight-compiled-circuits: "Weight-compiled circuits & weight programming"
+  physiological-sensing: "Physiological sensing & metabolic measurement"
 papers:
   - id: "2611.21885"
     title: "Language Models Can Rewrite Their Own Weights"
@@ -40,3 +41,18 @@ papers:
     unofficial_code: null
     status: official-code
     smoke_test: "CPU, numpy"
+  - id: "US20190120821A1"
+    arxiv: false
+    type: patent
+    venue: "US patent application (granted as US 12,736,522 B2)"
+    url: "https://patents.google.com/patent/US20190120821A1/en"
+    title: "Breath Analysis Device (sidestream breath-by-breath O2/CO2 indirect calorimeter)"
+    authors: "Atsalakis; Endo Medical Inc., now PNOE Inc."
+    date: "2019-04"
+    category: physiological-sensing
+    folder: papers/physiological-sensing/patent-US20190120821A1-sidestream-vo2
+    model: "no LLM (numpy/scipy simulation)"
+    official_code: null
+    unofficial_code: null
+    status: notebook
+    smoke_test: "CPU, numpy, ~6 s"

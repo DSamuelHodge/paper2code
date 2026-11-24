@@ -17,7 +17,7 @@ def row(p):
         colab = f"[official code]({p['official_code']})" + (f"<br>{badge}" if has_nb else "")
         status = "🔗 official code" + (" + 🧭 guided tour" + smoke if has_nb else "")
     else:
-        colab, status = badge, "📓 notebook" + smoke
+        colab, status = badge, ("📜 patent · " if p.get("type") == "patent" else "") + "📓 notebook" + smoke
     return f"| {title} | {src} | {p['date']} | {p.get('model') or '-'} | {colab} | {status} |"
 
 parts = [open(os.path.join(ROOT, "templates", "README_header.md")).read().rstrip(), "", "## Index", ""]
